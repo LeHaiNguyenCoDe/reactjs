@@ -3,6 +3,7 @@
   "version": "1.4.0",
   "private": true,
   "description": "A potentially reusable formalized login flow pattern for crafting web development project",
+  "homepage": "https://LeHaiNguyenCoDe.github.io/reactjs/",
   "keywords": [
     "login flow",
     "formalized pattern",
@@ -11,18 +12,17 @@
     "react router app",
     "web craftmanship"
   ],
-  "bugs": "https://github.com/dwiyatci/redux-toolkit-login-flow/issues",
   "license": "SEE LICENSE IN LICENSE.txt",
   "author": "Glenn Dwiyatcita <gmd@email.com> (https://tiny.cc/dwiyatci)",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/dwiyatci/redux-toolkit-login-flow.git"
+    "type": "git"
   },
   "dependencies": {
     "@reduxjs/toolkit": "1.8.1",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.1.1",
     "@testing-library/user-event": "14.1.1",
+    "gh-pages": "^4.0.0",
     "node-sass": "^7.0.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
@@ -42,7 +42,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"{**/*,*}.{js,ts,jsx,tsx,json,yml,yaml,xml,html,css,less,sass,scss,md,sh,graphql,gql}\"",
-    "format:check": "prettier --list-different \"{**/*,*}.{js,ts,jsx,tsx,json,yml,yaml,xml,html,less,sass,scss,md,sh,graphql,gql}\""
+    "format:check": "prettier --list-different \"{**/*,*}.{js,ts,jsx,tsx,json,yml,yaml,xml,html,less,sass,scss,md,sh,graphql,gql}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
